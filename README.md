@@ -10,7 +10,7 @@
 
 <h1 align="center">Pokemon Kotlin SpringBoot Restful API</h1>
   <p align="center">
-    Spring Boot Training of the basics concepts in order to start application.
+    Simple example of simple crud restful api using Kotlin Spring Boot application.
     <br/>
   </p>
 </div>
@@ -37,7 +37,8 @@
 
 ## About The Project
 
-This is a CRUD restful API example using kotlin and Springboot Application.
+This project is a CRUD restful API example using kotlin and Springboot Application.
+The layers definition is based in hexagonal architecture and DDD.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
