@@ -10,7 +10,7 @@
 
 <h1 align="center">Pokemon Kotlin SpringBoot Restful API</h1>
   <p align="center">
-    Simple example of simple crud restful api using Kotlin Spring Boot application.
+     Example of simple crud restful api using Kotlin Spring Boot application.
     <br/>
   </p>
 </div>
