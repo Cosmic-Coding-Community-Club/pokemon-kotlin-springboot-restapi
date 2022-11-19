@@ -1,14 +1,14 @@
 <a name="readme-top"></a>
 
-![Language](https://img.shields.io/badge/Language-kotlin-blue) ![License](https://img.shields.io/badge/License-Apache%202%2E0-green) ![Author](https://img.shields.io/badge/Author-Jordi%20Jiménez%20Guil-green)
+![Language](https://img.shields.io/badge/Language-kotlin-blue) ![Language](https://img.shields.io/badge/Framework-SpringBoot-blue) ![License](https://img.shields.io/badge/License-Apache%202%2E0-green) ![Author](https://img.shields.io/badge/Author-Jordi%20Jiménez%20Guil-green)
 
 
 <br />
 <div align="center">
 
-![Logo](etc/images/spring_boot_logo.png)
+![Logo](etc/images/pokemon.png)
 
-<h1 align="center">Pokemon Kotlin SpringBoot restful API</h1>
+<h1 align="center">Pokemon Kotlin SpringBoot Restful API</h1>
   <p align="center">
     Spring Boot Training of the basics concepts in order to start application.
     <br/>
@@ -23,6 +23,7 @@
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#how-use-api">How use API</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -36,43 +37,80 @@
 
 ## About The Project
 
-This training is for beginners and students that reviews the basic concepts of the Spring Boot Applications.
-
-#### Program - What you will learn in this training?
-
-* Practice 1: IoC and dependencies injection
-* Practice 2: Configurations of properties
-* Practice 3: Pokemon Simple CRUD restfull API
+This is a CRUD restful API example using kotlin and Springboot Application.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
 
-This training is a series of practices to get you familiar with the Spring Boot Applications and your basic concepts.
+To start this project use gradle tasks in application.
 
-For each practice exists an "INSTRUCTIONS.md" file that explain the goals.
+#### How to build and run application
 
-Also, there is a branch that contains practice and other branch that contains the solutions.
-
-For example, for the practice 1 exists "tech/practice-1" and "tech/practice-1-solutions".
-
-#### How to build and run tests
-
-##### Working with the project using Intellij IDEA:
+##### Using Intellij IDEA:
 
 1. Import the project as Gradle project.
-2. To build the project and run the tests use `test` task on the Gradle tool window
+2. To build the project and to run app use `bootRun` task on the Gradle tool window
    (`View | Tool Windows | Gradle`).
 
 Here https://www.jetbrains.com/help/idea/gradle.html#gradle_tasks you can read
 how to run Gradle task from the Gradle toolbar in IntelliJ IDEA.
 
-##### Working with the commandline
+##### Using commandline
 
 You can also build the project and run all tests in the terminal:
 
 ```
-./gradlew test
+./gradlew bootRun
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## How use API
+
+The pokemon api is published in localhost and in 8080 port.
+
+This CRUD allows performs four types of http methods:
+
+##### GET
+```
+   url: http://localhost:8080/pokemon/charmander
+```
+
+##### POST
+```
+   url: http://localhost:8080/pokemon
+   
+   headers: Content-Type application/json
+      
+   body:
+      {  
+           "name":"charmander",
+           "attach":12,
+           "defense":31,
+           "speed":23
+       }
+```
+
+
+##### PUT
+```
+   url: http://localhost:8080/pokemon/charmander
+   
+   headers: Content-Type application/json
+      
+   body:
+      {
+           "name": "charmander",
+           "attack" : 31,
+           "defense" : 31,
+           "speed": 31
+       }
+```
+
+##### DELETE
+```
+   url: http://localhost:8080/pokemon/charmander
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
