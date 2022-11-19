@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-![Language](https://img.shields.io/badge/Language-kotlin-blue) ![Language](https://img.shields.io/badge/Framework-SpringBoot-blue) ![License](https://img.shields.io/badge/License-Apache%202%2E0-green) ![Author](https://img.shields.io/badge/Author-Jordi%20Jiménez%20Guil-green)
+![Author](https://img.shields.io/badge/Author-Jordi%20Jiménez%20Guil-green) ![Language](https://img.shields.io/badge/Language-kotlin-blue) ![Language](https://img.shields.io/badge/Framework-SpringBoot-blue) ![License](https://img.shields.io/badge/License-Apache%202%2E0-green) 
 
 
 <br />
