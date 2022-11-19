@@ -73,11 +73,13 @@ The pokemon api is published in localhost and in 8080 port.
 This CRUD allows performs four types of http methods:
 
 ##### GET
+Obtain pokemon using identifier (pokemon name)
 ```
    url: http://localhost:8080/pokemon/charmander
 ```
 
 ##### POST
+Create pokemon
 ```
    url: http://localhost:8080/pokemon
    
@@ -94,6 +96,7 @@ This CRUD allows performs four types of http methods:
 
 
 ##### PUT
+Update pokemon using identifier (pokemon name)
 ```
    url: http://localhost:8080/pokemon/charmander
    
@@ -109,6 +112,7 @@ This CRUD allows performs four types of http methods:
 ```
 
 ##### DELETE
+Delete pokemon using identifier (pokemon name)
 ```
    url: http://localhost:8080/pokemon/charmander
 ```
